@@ -1,0 +1,142 @@
+<!-- <div>
+
+    <button (click)="mandardisco()">ver discos</button>
+    <tbody *ngFor="let disco1 of discos; let i= index">
+        <tr>
+            <td>{{i}}</td>
+            <td>{{disco1.titulo}}</td>
+            <td>{{disco1.interprete}}</td>
+            <td>{{disco1.anyoPublicacion}}</td>
+        </tr>
+</div> -->
+
+<!-- 
+<div>
+
+    <input type="text" #ids>
+    <button (click)="mostrarUnDisco(ids.value)">Buscar de disco por indice.</button>
+
+
+    <div *ngIf="disco!=null">
+        <tr>
+            <td>{{i}}</td>
+            <td>{{disco.titulo}}</td>
+            <td>{{disco.interprete}}</td>
+            <td>{{disco.anyoPublicacion}}</td>
+        </tr>
+    </div>
+
+</div>
+ -->
+
+
+<!-- añade disco -->
+<!-- 
+<div>
+    <input type="text" #id1>
+    <input type="text" #titulo1>
+    <input type="text" #interprete1>
+    <input type="text" #anyoP1>
+    <button (click)="insertarDisco(id1,titulo1.value,interprete1.value,anyoP1.value)">Añadir un disco nuevo.</button>
+</div> -->
+
+
+<!-- actualizar disco -->
+<!-- <div>
+    <input type="text" #idA>
+    <input type="text" #tituloA>
+    <input type="text" #interpreteA>
+    <input type="text" #anyoPA>
+    <button (click)="actualizarDisco2(idA,tituloA.value,interpreteA.value,anyoPA.value)">Actualizar disco.</button>
+</div> -->
+
+
+
+
+
+
+
+
+<!-- <input type="text">
+
+<button type="button" class="btn btn-primary btn-lg btn-block" (click)="mandardisco()"  >Block level button</button> -->
+<!-- 
+<table>
+
+    <tbody *ngFor="let disco of discos; let i= index">
+        <tr>
+            <td>{{i}}</td>
+            <td>{{disco.titulo}}</td>
+            <td>{{disco.interprete}}</td>
+            <td>{{disco.anyoPublicacion}}</td>
+        </tr>
+
+    </tbody>
+</table> -->
+<!-- 
+<div>
+    <input type="text" #id1>
+    <input type="text" #titulo1>
+    <input type="text" #interprete1>
+    <input type="text" #anyoP1>
+    <button (click)="insertarDisco(id1,titulo1.value,interprete1.value,anyoP1.value)">Añadir un disco nuevo.</button>
+</div> -->
+
+
+<h4>Añade Nuevo Disco a la Colección.</h4>
+<form>
+    <div class="form-row">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Numero de identidad" #id1>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre de Disco" #titulo1>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre del Artista" #interprete1>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Año del lazamiento" #anyoP1>
+        </div>
+    </div>
+    <button type="button" class="btn btn-link" (click)="insertarDisco(id1,titulo1.value,interprete1.value,anyoP1.value)">Insertar Nuevo Disco</button>
+</form>
+
+
+
+<!-- ACTUALIZAR DATOS DE DISCO -->
+<h4>Actualizar Disco.</h4>
+<form>
+    <div class="form-row">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Numero de identidad" #id2>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre de Disco" #titulo2>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre del Artista" #interprete2>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Año del lazamiento" #anyoP2>
+        </div>
+    </div>
+    <button type="button" class="btn btn-link" (click)="actualizarDisco2(id2.value,titulo2.value,interprete2.value,anyoP2.value)">Actulizar Nuevo Disco</button>
+</form>
+
+
+<!-- //Eliminar disco -->
+
+
+<h4>Eliminar disco.</h4>
+
+<div>
+    <input type="text" class="form-control" placeholder="Añade id" #ids>
+    <button type="button" class="btn btn-link" (click)="delete(ids)">Eliminar Disco</button>
+
+
+</div>
+
+<div *ngIf="discoEliminado"> Disco eliminado </div>

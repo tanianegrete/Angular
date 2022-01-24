@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dia5"
+    }
+  },
+  "defaultProject": "dia5",
+  "cli": {
+    "analytics": "4f97ce9a-1cc3-4d05-833b-b416693e9157"
+  }
 }

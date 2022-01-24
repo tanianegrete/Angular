@@ -1,0 +1,57 @@
+<button type="button" class="btn btn-link" (click)="mandardisco()">Ver discos.</button>
+
+
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Identificador de disco</th>
+            <th scope="col">Nombre de Disco</th>
+            <th scope="col">Artista</th>
+            <th scope="col">Año de salida del disco</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let disco1 of discos; let i= index ">
+        <tr>
+            <td>{{disco1.id}}</td>
+            <td>{{disco1.titulo}}</td>
+            <td>{{disco1.interprete}}</td>
+            <td>{{disco1.anyoPublicacion}}</td>
+        </tr>
+
+    </tbody>
+
+</table>
+<!-- 
+<tbody *ngFor="let disco1 of discos; let i= index ">
+    <tr>
+        <td>{{i}}</td>
+        <td>{{disco1.titulo}}</td>
+        <td>{{disco1.interprete}}</td>
+        <td>{{disco1.anyoPublicacion}}</td>
+    </tr> -->
+<!-- <input type="text" #ids>
+<button type="button" class="btn btn-link" (click)="mostrarUnDisco(ids.value)">Buscar disco por identificador.</button> -->
+<div>
+
+    <input type="text" #ids>
+    <button type="button" class="btn btn-link" (click)="mostrarUnDisco(ids.value)">Buscar de disco por indice.</button>
+
+
+    <div *ngIf="disco!=null">
+        <tr>
+            <h6>Nombre de disco:</h6>
+            <td>{{disco.titulo}} </td>
+        </tr>
+
+        <tr>
+            <h6> Artista:</h6>
+            <td> {{disco.interprete}} </td>
+        </tr>
+        <tr>
+            <h6> Año de publicacion:</h6>
+            <td> {{disco.anyoPublicacion}}</td>
+        </tr>
+    </div>
+
+</div>
